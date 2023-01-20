@@ -1,0 +1,11 @@
+CREATE TABLE villain (
+  id BIGINT NOT NULL,
+   name VARCHAR(50) NOT NULL,
+   other_name VARCHAR(255),
+   level INTEGER NOT NULL,
+   picture VARCHAR(255),
+   powers VARCHAR(32600),
+   CONSTRAINT pk_villain PRIMARY KEY (id)
+);
+
+CREATE SEQUENCE  IF NOT EXISTS villain_seq START WITH 1 INCREMENT BY 50;
